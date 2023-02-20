@@ -1,1 +1,1 @@
-# Bootstrab_Templeate
+# Bootstrab_Template
