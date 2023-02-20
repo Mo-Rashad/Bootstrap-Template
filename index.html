@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<html lang="en" style="scroll-behavior: smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link Bootstrap.css -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!-- Font Awsome Library -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body class="bg-dark">
+  <!-- Start Header Section -->
+  <header>
+    <div class="navbar-collapse">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark justify-content-between w-100">
+        <!-- LOGO -->
+        <a href="" class="navbar-brand">
+          <img src="images/Logo-jackson.jpg" width="80px" height="40px" class="rounded" alt="Logo" />
+        </a>
+        <!-- Button to Collapse the Sections -->
+        <a href="#nav" class="navbar-toggler" data-toggle="collapse">
+          <span class="navbar-toggler-icon"></span>
+        </a>
+        <div id="nav" class="collapse navbar-collapse justify-content-between">
+          <!-- Sections -->
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Html</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Css</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">JavaScript</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">jQuery</a></li>
+            <li class="nav-item dropdown">
+              <a href="#Dropdown" class="nav-link dropdown-toggle" data-toggle="dropdown">Bootstrap</a>
+              <div class="dropdown-menu" aria-labelledby="Dropdown">
+                <a href="https://www.w3schools.com/bootstrap/default.asp" target="_blank"
+                  class="dropdown-item">Bootstrap v.3</a>
+                <a href="https://www.w3schools.com/bootstrap4/default.asp" target="_blank"
+                  class="dropdown-item">Bootstrap v.4</a>
+                <a href="https://www.w3schools.com/bootstrap5/index.php" target="_blank" class="dropdown-item">Bootstrap
+                  v.5</a>
+              </div>
+            </li>
+          </ul>
+          <!-- Search-bar -->
+          <div class="input-group row col-lg-5 col-md-3 col-8">
+            <input type="text" class="form-control col-6" />
+            <div class="input-group-append">
+              <div class="input-group-text">Search</div>
+            </div>
+          </div>
+          <!-- Button to Open the Log in -->
+          <div class="btn btn-secondary m-1" data-toggle="modal" data-target="#myModal">
+            Log in
+          </div>
+          <!-- The Modal -->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="col modal-title text-center">Log in</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body was-validated" action="/action_page.php">
+                  <div class="input-group p-1">
+                    <!-- for Name -->
+                    <div class="input-group-prepend">
+                      <label for="uname" class="input-group-text" style="width: 90px">Name:</label>
+                    </div>
+                    <input type="text" class="form-control" autofocus id="uname" placeholder="Enter your Name"
+                      name="uname" style="width: 210px" required /><br />
+                    <small class="form-text font-italic text-muted ml-2">please enter your name.</small>
+                    <span class="m-2 w-100"></span>
+                    <!-- for Password -->
+                    <div class="input-group-prepend">
+                      <label for="pwd" class="input-group-text" style="width: 90px">Password:</label>
+                    </div>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter your Password" name="pswd"
+                      style="width: 210px" required />
+                    <small class="form-text font-italic text-muted ml-1">please enter your password</small>
+                    <span class="m-2 w-100"></span>
+                    <!-- for Email -->
+                    <div class="input-group-prepend">
+                      <label for="email" class="input-group-text" style="width: 90px">Email:</label>
+                    </div>
+                    <input type="email" class="form-control" placeholder="Enter your Email" style="width: 210px"
+                      required />
+                    <small class="form-text font-italic text-muted ml-2">please enter your email.</small>
+                    <span class="m-2 w-100"></span>
+                  </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer w-100 justify-content-center">
+                  <button type="submit" class="btn btn-success align-content-center">
+                    Log in
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header Section -->
+  <!-- Start Home Section -->
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+      <li data-target="#demo" data-slide-to="4"></li>
+      <li data-target="#demo" data-slide-to="5"></li>
+    </ul>
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/What is Web Development.png" class="w-100 h-100vh" alt="HTML-Tutorials" />
+        <div class="carousel-caption"></div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/HTML-Tutorials.png" class="w-100 h-100vh" alt="HTML-Tutorials" />
+        <div class="carousel-caption">
+          <a href="#dddhtml"><button class="btn btn-outline-light">
+              Start Learn This Course
+            </button></a>
+          <a href="#fffhtml"><button class="btn btn-outline-light">
+              Going to The Reference
+            </button></a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/CSSTutorial.png" class="w-100 h-100vh" alt="CSS-Tutorials" />
+        <div class="carousel-caption">
+          <a href="#dddcss"><button class="btn btn-outline-light">
+              Start Learn This Course
+            </button></a>
+          <a href="#fffcss"><button class="btn btn-outline-light">
+              Going to The Reference
+            </button></a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/JavaScriptTutorial.png" class="w-100 h-100vh" alt="JavaScript-Tutorials" />
+        <div class="carousel-caption">
+          <a href="#dddjs"><button class="btn btn-outline-light">
+              Start Learn This Course
+            </button></a>
+          <a href="#fffjs"><button class="btn btn-outline-light">
+              Going to The Reference
+            </button></a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/jQuery-Tutorial.png" class="w-100 h-100vh" alt="jQuery-Tutorials" />
+        <div class="carousel-caption">
+          <a href="#dddjquery"><button class="btn btn-outline-light">
+              Start Learn This Course
+            </button></a>
+          <a href="#fffjquery"><button class="btn btn-outline-light">
+              Going to The Reference
+            </button></a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/BootstrapTutorial.png" class="w-100 h-100vh" alt="Bootstrap-Tutorials" />
+        <div class="carousel-caption">
+          <a href="#dddbootstrap"><button class="btn btn-outline-light">
+              Start Learn This Course
+            </button></a>
+          <a href="#fffbootstrap"><button class="btn btn-outline-light">
+              Going to The Reference
+            </button></a>
+        </div>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  <!-- End Home Section -->
+  <!-- Start Welcome Sction -->
+  <div class="bg-secondary text-light p-4 text-center col">
+    <h1>
+      Welcome to <br />
+      Web Development Tools
+    </h1>
+  </div>
+  <div class="p-4 row m-0 bg-secondary justify-content-around">
+    <div class="card col-xl-2 col-lg-3 col-md-5 col-sm-7 col-7 m-3 p-0 bg-dark" id="dddhtml">
+      <img src="images/html-icon-internet-button-on-260nw-514454014.jpg" height="300px" alt="HTML"
+        class="card-img-top p-1" />
+      <div class="card-body text-light">
+        <h3>HTML</h3>
+        <p>HTML from zero to hero.</p>
+        <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="btn btn-body"
+          style="background-color: coral; color: #fff">Learn This Course</a>
+      </div>
+    </div>
+    <div class="card col-xl-2 col-lg-3 col-md-5 col-sm-7 col-7 m-3 p-0 bg-dark" id="dddcss">
+      <img src="images/file-formats_318-337962.avif" alt="CSS" height="300px" class="card-img-top p-1" />
+      <div class="card-body text-light">
+        <h3>CSS</h3>
+        <p>CSS from zero to hero.</p>
+        <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="btn btn-primary"
+          style="color: #fff">Learn This Course</a>
+      </div>
+    </div>
+    <div class="card col-xl-2 col-lg-3 col-md-5 col-sm-7 col-7 m-3 p-0 bg-dark" id="dddjs">
+      <img src="images/Javascript-JS.png" height="300px" alt="js" class="card-img-top p-1" />
+      <div class="card-body text-light">
+        <h3>javaScript</h3>
+        <p>javaScript from zero to hero.</p>
+        <a href="https://www.w3schools.com/js/default.asp" target="_blank" class="btn btn-warning"
+          style="color: #fff">Learn This Course</a>
+      </div>
+    </div>
+    <div class="card col-xl-2 col-lg-3 col-md-5 col-sm-7 col-7 m-3 p-0 bg-dark" id="dddjquery">
+      <img src="images/jquery-icon-17.jpg" height="300px" alt="jQuery" class="card-img-top p-1" />
+      <div class="card-body text-light">
+        <h3>jQuery</h3>
+        <p>jQuery from zero to hero.</p>
+        <a href="https://www.w3schools.com/jquery/default.asp" target="_blank" class="btn btn-info"
+          style="color: #fff">Learn This Course</a>
+      </div>
+    </div>
+    <div class="card col-xl-2 col-lg-3 col-md-5 col-sm-7 col-7 m-3 p-0 bg-dark" id="dddbootstrap">
+      <img src="images/Bootstrap.webp" height="300px" alt="bootstrab" class="card-img-top p-1" />
+      <div class="card-body text-light">
+        <h3>Bootstrap</h3>
+        <p>Bootstrap from zero to hero.</p>
+        <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" target="_blank" class="btn btn-body"
+          style="background-color: blueviolet; color: #fff">Learn This Course</a>
+      </div>
+    </div>
+  </div>
+  <!-- End Welcome Sction -->
+  <!-- Start Programing-Language Section -->
+  <hr class="m-0 p-0" />
+  <div class="bg-secondary text-light p-4 text-center col">
+    <h2>Our Programming Languages</h2>
+  </div>
+  <!-- for python -->
+  <div class="pl-0 text-center">
+    <div class="colapse w-100 m-0 p-0">
+      <a href="#collapse1" class="btn btn-outline-light border-0 text-body w-100 text-left p-3 col"
+        data-toggle="collapse">
+        <h5>Python Programing Language</h5>
+      </a>
+      <h5 class="m-0 p-0">
+        <p id="collapse1" class="p-3 pl-4 collapse text-light">
+          Python is powerful... and fast, plays well with others,runs
+          everywhere, is friendly & easy to learn, is Open.
+        </p>
+      </h5>
+    </div>
+    <hr class="m-0 p-0 bg-secondary" />
+    <!-- for java -->
+    <div class="colapse w-100 m-0 p-0">
+      <a href="#collapse2" class="btn btn-outline-light border-0 text-body w-100 text-left p-3 col"
+        data-toggle="collapse">
+        <h5>Java Programing Language</h5>
+      </a>
+      <h5 class="m-0 p-0">
+        <p id="collapse2" class="p-3 pl-4 collapse text-light">
+          Java is a powerful general-purpose programming language. It is used
+          to develop desktop and mobile applications, big data processing,
+          embedded systems, and so on. According to Oracle, the company that
+          owns Java, Java runs on 3 billion devices worldwide, which makes
+          Java one of the most popular programming languages.
+        </p>
+      </h5>
+    </div>
+    <hr class="m-0 p-0 bg-secondary" />
+    <!-- for javascript -->
+    <div class="colapse w-100 m-0 p-0">
+      <a href="#collapse3" class="btn btn-outline-light border-0 text-body w-100 text-left p-3 col"
+        data-toggle="collapse">
+        <h5>JavaScript Programing Language</h5>
+      </a>
+      <h5 class="m-0 p-0">
+        <p id="collapse3" class="p-3 pl-4 collapse text-light">
+          JavaScript is a scripting or programming language that allows you to
+          implement complex features on web pages.
+        </p>
+      </h5>
+    </div>
+  </div>
+  <!-- End Programing-Language Section -->
+  <!-- Start Language-Details Section -->
+  <div>
+    <div class="jumbotron bg-dark rounded-0 rounded-bottom m-0 p-0">
+      <h3 class="bg-secondary col text-light rounded-top text-center p-3 m-0">
+        Python is very easy
+      </h3>
+      <h3 class="text-light pl-3">
+        Try to Download Editor from
+        <a href="https://www.python.org/downloads/" target="_blank">here</a>
+      </h3>
+      <a href="#" class="btn btn-outline-light m-3 p-2" data-placement="bottom" data-toggle="tooltip"
+        title="Copy to Clipboard!">Copy</a>
+      <p class="text-info p-3 m-1">
+        name = input('enter your name: '); print("Hello" + name)
+      </p>
+    </div>
+    <div class="jumbotron bg-dark rounded-bottom m-0 p-0">
+      <h3 class="bg-secondary col text-light rounded-top text-center p-3 m-0">
+        Java is very easy
+      </h3>
+      <h3 class="text-light pl-3">
+        Try to Download Editor from
+        <a href="https://www.java.com/en/" target="_blank">here</a>
+      </h3>
+      <a href="#" class="btn btn-outline-light m-3 p-2" data-placement="bottom" data-toggle="tooltip"
+        title="Copy to Clipboard!">Copy</a>
+      <p class="text-info p-3 m-1">
+        name = input('enter your name: '); print("Hello" + name)
+      </p>
+    </div>
+    <div class="jumbotron bg-dark rounded-0 rounded-bottom m-0 p-0">
+      <h3 class="bg-secondary col text-light rounded-top text-center p-3 m-0">
+        JavaScript is very easy
+      </h3>
+      <h3 class="text-light pl-3">
+        Try to Download Editor from
+        <a href="https://code.visualstudio.com/download" target="_blank">here</a>
+      </h3>
+      <a href="#" class="btn btn-outline-light m-3 p-2" data-placement="bottom" data-toggle="tooltip"
+        title="Copy to Clipboard!">Copy</a>
+      <p class="text-info p-3 m-1">
+        name = input('enter your name: '); print("Hello" + name)
+      </p>
+    </div>
+    <hr class="m-0 p-3 bg-secondary" />
+  </div>
+  <!-- End Language-Details Section -->
+  <!-- Start Books Section -->
+  <h2 class="col text-center bg-dark text-light p-4 m-0">Our Books</h2>
+  <div class="p-4 row m-0 bg-secondary justify-content-around">
+    <div class="card col-xl-2 col-lg-3 col-md-5 col-sm-7 col-7 m-3 p-0 bg-dark" id="fffhtml">
+      <img src="images/HTML.png" alt="HTML" class="card-img-top p-1" />
+      <div class="card-body text-light">
+        <h3>HTML</h3>
+        <p>HTML5 from zero to hero.</p>
+        <a href="https://www.w3schools.com/tags/default.asp" class="btn btn-body p-1" target="_blank"
+          style="background-color: coral; color: #fff">Download the Book</a>
+      </div>
+    </div>
+    <div class="card col-xl-2 col-lg-3 col-md-5 col-sm-7 col-7 m-3 p-0 bg-dark" id="fffcss">
+      <img src="images/CSS.png" alt="CSS" class="card-img-top p-1" />
+      <div class="card-body text-light">
+        <h3>CSS</h3>
+        <p>CSS3 from zero to hero.</p>
+        <a href="https://www.w3schools.com/cssref/index.php" class="btn btn-primary p-1" target="_blank"
+          style="color: #fff">Download the Book</a>
+      </div>
+    </div>
+    <div class="card col-xl-2 col-lg-3 col-md-5 col-sm-7 col-7 m-3 p-0 bg-dark" id="fffjs">
+      <img src="images/javaScript.png" alt="js" class="card-img-top p-1" />
+      <div class="card-body text-light">
+        <h3>javaScript</h3>
+        <p>javaScript from zero to hero.</p>
+        <a href="https://www.w3schools.com/jsref/default.asp" class="btn btn-warning p-1" target="_blank"
+          style="color: #fff">Download the Book</a>
+      </div>
+    </div>
+    <div class="card col-xl-2 col-lg-3 col-md-5 col-sm-7 col-7 m-3 p-0 bg-dark" id="fffjquery">
+      <img src="images/jQuery.png" alt="jQuery" class="card-img-top p-1" />
+      <div class="card-body text-light">
+        <h3>jQuery</h3>
+        <p>jQuery from zero to hero.</p>
+        <a href="https://www.w3schools.com/jquery/jquery_ref_overview.asp" class="btn btn-info p-1" target="_blank"
+          style="color: #fff">Download the Book</a>
+      </div>
+    </div>
+    <div class="card col-xl-2 col-lg-3 col-md-5 col-sm-7 col-7 m-3 p-0 bg-dark" id="fffbootstrap">
+      <img src="images/bootstrab.jpg" alt="bootstrab" class="card-img-top p-1" />
+      <div class="card-body text-light">
+        <h3>Bootstrap</h3>
+        <p>Bootstrap from zero to hero.</p>
+        <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp" class="btn btn-body p-1"
+          target="_blank" style="background-color: blueviolet; color: #fff">Download the Book</a>
+      </div>
+    </div>
+  </div>
+  <!-- End Books Section -->
+  <!-- Start Developers-team Section -->
+  <div class="m-0 p-0">
+    <h2 class="col text-center bg-dark text-light p-4 m-0">Our Team</h2>
+    <div class="cards row col-12 justify-content-around text-light p-4 m-0 bg-secondary">
+      <div class="card col-lg-2 col-md-3 col-sm-6 col-7 m-2 bg-dark p-1">
+        <img src="images/1.jpg" alt="Ramy EL-Maary" class="card-img-top" />
+        <div class="card-body">
+          <h4>Ramy EL-Maary</h4>
+          <p class="pl-2">Ramy is an Astrophysicist</p>
+          <a href="https://github.com/Mo-Rashad" target="_blank" class="btn btn-outline-light">View CV</a>
+        </div>
+      </div>
+      <div class="card col-lg-2 col-md-3 col-sm-6 col-7 m-2 bg-dark p-1">
+        <img src="images/2.jpg" alt="Mohamed Rashad" class="card-img-top" />
+        <div class="card-body">
+          <h4>Mohamed Rashad</h4>
+          <p class="pl-2">Mohamed is a full-stack developer</p>
+          <a href="https://github.com/Mo-Rashad" target="_blank" class="btn btn-outline-light">View CV</a>
+        </div>
+      </div>
+      <div class="card col-lg-2 col-md-3 col-sm-6 col-7 m-2 bg-dark p-1">
+        <img src="images/3.jpg" alt="Essam Heegy" class="card-img-top" />
+        <div class="card-body">
+          <h4>Essam Heegy</h4>
+          <p class="pl-2">Essam is an Astrophysicist</p>
+          <a href="https://github.com/Mo-Rashad" target="_blank" class="btn btn-outline-light">View CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Developers-team Section -->
+  <!-- Start Join Section -->
+  <h2 class="col text-center bg-dark text-light p-4 m-0">Join US</h2>
+  <div class="m-0 p-5 row text-light justify-content-around align-content-between bg-secondary w-100 rounded-0">
+    <div class="card-body bg-dark text-center col-lg-2 col-md-4 col-7 rounded m-3">
+      <h4>Follow Us</h4>
+      <h1>
+        <a href="https://web.facebook.com/" target="_blank" class="text-primary"><i
+            class="fa-brands fa-facebook"></i></a>
+      </h1>
+    </div>
+    <div class="card-body bg-dark text-center col-lg-2 col-md-4 col-7 rounded m-3">
+      <h4>Follow Us</h4>
+      <h1>
+        <a href="https://www.twitter.com/" target="_blank" class="text-info"><i class="fa-brands fa-twitter"></i></a>
+      </h1>
+    </div>
+    <div class="card-body bg-dark text-center col-lg-2 col-md-4 col-7 rounded m-3">
+      <h4>Follow Us</h4>
+      <h1>
+        <a href="https://www.youtube.com/" target="_blank" class="text-danger"><i class="fa-brands fa-youtube"></i></a>
+      </h1>
+    </div>
+    <div class="card-body bg-dark text-center col-lg-2 col-md-4 col-7 rounded m-3">
+      <h4>Follow Us</h4>
+      <h1>
+        <a href="https://www.linkedin.com/in/mohamed-rashad3981ba1bb" target="_blank" class="text-primary"><i
+            class="fa-brands fa-linkedin-in"></i></a>
+      </h1>
+    </div>
+  </div>
+  <!-- End Join Section -->
+  <!-- Start Footer Section -->
+  <div class="bg-dark text-light text-center col p-1">
+    <p class="pt-3">© Copyright 2023 All rights Reserved.</p>
+  </div>
+  <!-- End Footer Section -->
+  <!-- Link Popper -->
+  <script src="js/popper.min.js"></script>
+  <!-- Link jQuery -->
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <!-- Link Bootstrap.js -->
+  <script src="js/bootstrap.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+</body>
+
+</html>
